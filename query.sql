@@ -1,10 +1,12 @@
 -- Query to check successful load
-SELECT * FROM premise;
 
-SELECT * FROM county;
+select * from confirmed_cases;
+select * from mortality;
+select * from recovered;
+select * from testcases;
 
--- Join tables on county_id
-SELECT premise.id, premise.premise_name, county.county_name
-FROM premise
-INNER JOIN county
-ON premise.county_id = county.county_id;
+-- Query summary table order by province, weekno
+
+select * from summary_data order by province, weekno;
+
+
