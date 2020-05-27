@@ -47,10 +47,3 @@ create table summary_data
 	test_cases				int,
 	death_cases				int
 );
---
-select * from confirmed_cases;
-select * from mortality;
-select * from recovered;
-select * from testcases;
-select * from summary_data order by province, weekno;
-
